@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+      .button {
+        margin-left: 10px;
+        display: inline-block;
+        padding: 45px 25px;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #808080;
+        background-color: #696969;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+      }
+      .button:hover {background-col
+        or: #3e8e41}
+
+      .button:active {
+        background-color: #FF0000;
+        box-shadow: 0 5px #000000;
+        transform: translateY(4px);
+      }
+      .div {
+        margin-left: 10px;
+        padding: 25px 32px;
+        font-size: 24px;
+        text-align: center;
+        color: #FFF;
+        background-color: #7FFFD4;
+        border-style: solid;
+        border-color: #F0FFF0;
+        border-width: 7px;
+      }
+    </style>
+  
+  <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+  <table style="margin:0px auto;padding: 10px;border:2px solid;border-color:#1E90FF">
+    <tbody>
+      <tr>
+        <td rowspan="2">
+          <img id="image" src="img/light-on.png" >
+        </td>
+        <td>
+          <div class="div" id="timer">5</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button class="button" onclick="toggleLight()">ON<br>-<br>OFF</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+ 
+  
+</body>
+</html>
