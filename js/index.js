@@ -42,7 +42,7 @@ function countDownTimer(){
    }else {
     timeLeft -= 1;
     image.src ="img/light-on.png";
-    document.getElementById("btn").disabled=true;
+    // document.getElementById("btn").disabled=true;
    }
    document.getElementById("timer").innerHTML = timeLeft;
 
