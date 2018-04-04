@@ -29,6 +29,7 @@ function countDownTimer(){
    if (timeLeft <= 0) {
     document.getElementById("image").src = "img/light-off.png" ; 
     clearInterval(id);
+    alert("時間到了");
    }else {
     timeLeft -= 1;
     image.src ="img/light-on.png";
