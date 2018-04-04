@@ -12,10 +12,15 @@ function createToDo() {
     }
     else{
       timeLeft = Number(input)+ 1  ;
-      id = setInterval(countDownTimer, 1000);
-    }
+      if (input !=0) {
+        clearInterval(id);
+        id = setInterval(countDownTimer, 1000);
+      }
       
+    } 
+
 }
+
 //切換照片
 function toggleLight(){
    var image = document.getElementById("image");
@@ -27,11 +32,12 @@ function toggleLight(){
 //計時器
 function countDownTimer(){
    
-   if (timeLeft <= 0) {
+   if (timeLeft == 0) {
     document.getElementById("image").src = "img/light-off.png" ; 
-    alert("時間到了");
     clearInterval(id);
-    document.getElementById("btn").disabled=false;
+    
+    alert("時間到了");
+    return;
     
    }else {
     timeLeft -= 1;
